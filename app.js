@@ -6,7 +6,7 @@ window.navigateTo = navigateTo;
 
 // تهيئة التطبيق عند التحميل
 window.addEventListener('DOMContentLoaded', () => {
-    const userRole = 'customer'; // افتراضيًا (يمكن جلبها من localStorage)
+    const userRole = 'seller'; // افتراضيًا (يمكن جلبها من localStorage)
     renderNavbar(userRole);
     handleRoute();
     
