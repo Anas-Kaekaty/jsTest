@@ -22,7 +22,8 @@ export function handleRoute() {
 }
 
 // دالة تغيير المسار دون إعادة تحميل الصفحة
-export function navigateTo(path) {
+export function navigateTo(event,path) {
+    event.preventDefault();
     window.history.pushState({}, '', path);
     handleRoute();
 }

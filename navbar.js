@@ -4,13 +4,13 @@ export function renderNavbar(userRole) {
 
     if (userRole === 'customer') {
         links = `
-            <a onclick="navigateTo('/')">الرئيسية</a>
-            <a  onclick="navigateTo('/dashboard')">لوحة التحكم</a>
+            <a onclick="navigateTo(event,'/')">الرئيسية</a>
+            <a  onclick="navigateTo(event,'/dashboard')">لوحة التحكم</a>
         `;
     } else if (userRole === 'seller') {
         links = `
-            <a href="/" onclick="navigateTo('/')">الرئيسية</a>
-            <a  onclick="navigateTo('/products')">المنتجات</a>
+            <a  onclick="navigateTo(event,'/')">الرئيسية</a>
+            <a  onclick="navigateTo(event,'/products')">المنتجات</a>
         `;
     }
 

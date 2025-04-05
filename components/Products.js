@@ -6,7 +6,7 @@ export function renderProducts() {
         <ul>
         <li>منتج 1 - سعر 10$</li>
         <li>منتج 2 - سعر 15$</li>
-        <button onclick="navigateTo('/dashboard')">العودة إلى اللوحة</button>
+        <button onclick="navigateTo(event,'/dashboard')">العودة إلى اللوحة</button>
         </ul>
     </div>
     `;
