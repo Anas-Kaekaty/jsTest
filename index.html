@@ -3,7 +3,7 @@
 <head>
     <title>SPA مع أدوار</title>
     <link rel="stylesheet" href="/jsTest/styles.css">
-    <base href="/jsTest/">
+    <base href="/">
 </head>
 <body>
     <!-- النافبار الديناميكي -->
@@ -14,5 +14,12 @@
 
     <!-- الملفات البرمجية (نستخدم type="module" للاستيراد) -->
     <script type="module" src="/jsTest/app.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const redirect = params.get('redirect');
+        if (redirect) {
+          window.history.replaceState({}, '', redirect);
+        }
+      </script>
 </body>
 </html>
