@@ -1,6 +1,6 @@
 import { renderHome } from './components/home.js';
 import { renderDashboard } from './components/dashboard.js';
-import { renderProducts } from './components/products.js';
+import { renderProducts } from './components/Products.js';
 
 export function handleRoute() {
     const path = window.location.pathname;

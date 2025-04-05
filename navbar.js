@@ -10,7 +10,7 @@ export function renderNavbar(userRole) {
     } else if (userRole === 'seller') {
         links = `
             <a href="/" onclick="navigateTo('/')">الرئيسية</a>
-            <a href="/products" onclick="navigateTo('/products')">المنتجات</a>
+            <a  onclick="navigateTo('/products')">المنتجات</a>
         `;
     }
 
